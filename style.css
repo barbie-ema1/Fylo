@@ -1,428 +1,432 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media (max-width: 480px){
-  
-  
-    #nav-header {
-        font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: space-between;
-        padding: auto;
-        height: 60px;
-        overflow: hidden;
-    
-    }
-    
-    .logo{
-        display: flex;
-        justify-content: space-around;
-        height: 30px;
-        width: 20%;
-      
-    
-    
-    }
-    
-    .nav-left{
-        width: 60%;
-        height: 60px;
-        font-weight: 400;
-        display: flex;
-        margin-top: 2pc;
-        justify-content: space-between;
-        text-decoration: none;
-        color: hsl(0, 0%, 75%);
-    
-    }
-    
-    .nav-left a{
-        color: hsl(243, 87%, 12%);
-        text-decoration: none;
-    }
-    
-    .first{
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-        height: fit-content;
-        justify-content: space-between;
-        font-family: "Open Sans", sans-serif;
-        margin-top: 3pc;
-        margin-bottom: 4pc;
-    }
-    
-    .f-left{
-        width: 80%;
-        justify-content: space-around;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        color: hsl(243, 87%, 12%);
-        margin: 12px;
-        margin-left: 25px;
-        padding: 12px;
-    
-    }
-    
-    .f-left h1,p{
-        display: block;
-    }
-    
-    .f-left input{
-        width: 90%;
-        height: 28px;
-        border: 1px solid hsl(243, 87%, 12%);
-        border-radius: 2px;
-        display: inline;
-        padding: 4px;
-        
-    }
-    .f-left input :hover{
-        cursor:pointer;
-    }
-    .f-left input::placeholder{
-        color: hsl(0, 0%, 75%);
-        text-align: left;
-        padding-left: 10px;
-        
-    }
-    .f-left button{
-        display: block;
-        background-color: hsl(224, 93%, 58%);
-        color: #ffff;
-        padding: 2px;
-        margin: 4px;
-        width: 90%;
-        height: 40px;
-        border-radius: 3px;
-        border:none;
-        margin-top:15px;
-    
-    }
-    .f-left button:hover{
-        cursor: pointer;
-    }
-    .f-right{
-       
-        width: 60%;
-        justify-content: space-around;
-    
-    }
-    
-    .f-right img{
-        width: 80%;
-        height: 80%;
-        margin-top: 2.5pc;
-        margin-left: 1pc;
-        padding-left: 1pc;
-    }
-    
-    
-    .second{
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-        height: max-content;
-        justify-content: space-between;
-        font-family: "Open Sans", sans-serif;
-        background-image: url('bg-curve-desktop.svg'); 
-        background-repeat: no-repeat; 
-        background-size: cover ;
-        background-position: center;
-        background-attachment:initial;
-        
-    
-    }
-    
-    .s-left{
-        width: 80%;
-        justify-content: space-around;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        color: hsl(243, 87%, 12%);
-        margin: 12px;
-        margin-left: 25px;
-        padding: 12px;
-        display: block;
-    
-    }
-    
-    .s-left h1,p{
-        display: block;
-        
-    }
-    
-    .s-left a{
-        color:hsl(170, 45%, 43%);
-        
-    }
-    
-    .see{
-        margin-left:4pc;}
 
-    
-    .card{
-        background-color: #ffff;
-        color:hsl(243, 87%, 12%);
-        display: block;
-        width: 85%;
-        height: 23vh;
-        font-size: 10px;
-        margin-top: 2pc;
-        margin-left:18px;
-        margin-bottom: 4pc;
-        border-radius: 0.5pc;
-        box-shadow: 3px 5px 6px 5px rgb(190, 188, 184);
-    
-    }
-    
-    .card img{
-        margin-top: 2pc;
-        margin-left: 1.5pc;
-    }
-    
-    .card p{
-        margin-bottom: 1.5pc;
-        display: block;
-        
-    }
-    .card-card{
-        margin-top: 2pc;
-    }
-    .card-card img{
-        width: 15%;
-        height: 15%;
-        border-radius: 50%;
-        border-color:#ffff;
-        margin-left: 1pc;
-        margin-top: 2pc;
-    }
-    
-    .cardleft{
-        margin-top: -4pc;
-        margin-left: 2pc;
-    }
-    .cardleft h2{
-        display: block;
-        margin-left: 2.3pc;
-        margin-top: 2.5pc;
-    
-    }
-    
-    .card p{
-        display: block;
-        margin-left: 2.3pc;
-        margin-top: -10px;
-        
-    
-    }
-    
-    .s-right{
-        width: 60%;
-        justify-content: space-around;
-    
-    }
-    
-    .s-right img{
-        width: 80%;
-        height: 60%;
-        margin-top: 7pc;
-        margin-left: 1pc;
-        padding-left: 1pc;
-    
-    }
-    
-    .third{
-        display: flex;
-        flex-flow: column;
-        width: 100%;
-        justify-content: space-between;
-        font-family: "Open Sans", sans-serif;
-        background-color: hsl(238, 22%, 44%);
-        
-    
-    
-    
-    }
-    
-    .t-left{
-        width: 60%;
-        justify-content: space-around;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        color: #ffff;
-        margin: 12px;
-        margin-left: 75px;
-        padding: 12px;
-        display: block;
-    }
-    
-    .t-left h3{
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        display: block;
-        margin-top: 3pc;
-        
-    }
-    
-    .t-left p{
-        display: block;
-        color: hsl(0, 0%, 75%);
-    }
-    
-    .t-right {
-        width: 80%;
-        justify-content: space-around;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        color: hsl(243, 87%, 12%);
-        margin: 12px;
-        margin-left: 75px;
-        margin-top: -1pc;
-        padding: 12px;
-        display: block;
-    }
-    
-    .t-right input{
-        width: 70%;
-        height: 28px;
-        border-radius: 2px;
-        display: inline;
-        padding: 4px;
-        border: none;
-    }
-    
-    .t-right button{
-        display: inline;
-        background-color: hsl(224, 93%, 58%);
-        color: #ffff;
-        padding: 2px;
-        margin: 6px;
-        margin-top: 10px;
-        margin-left: -2px;
-        width: 73%;
-        height: 36px;
-        border-radius: 5px;
-        border:none;
-    }
-    
-    .t-right input::placeholder{
-        color: hsl(0, 0%, 75%);
-        text-align: left;
-        padding-left: 10px;
-    
-    }
-    
-    .t-right input :hover{
-        cursor:pointer;
-    }
-    
-    .t-right button:hover {
-        cursor: pointer;
-    }
-    
-    .footer{
-        background-color: hsl(243, 87%, 12%);
-        width: 100%;
-        height: 100vh;
-    }
-    
-    .foot{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    
-        justify-content: space-between;
-        font-family: "Open Sans", sans-serif;
-        background-color: hsl(243, 87%, 12%);
-        color: #ffff;
-    }
-    
-    
-    .footlog{
-        display: block;
-        justify-content: space-between;
-        margin-bottom: 5pc;
-        width: 100%;
-        
-    }
-    
-    .footlog svg{
-        margin-top: 5pc;
-        margin-left: 4.8pc;
-    }
-    
-    .footor{
-        display: flex;
-        flex-direction: column;
-        margin-left: 4.8pc;
-        margin-top: 3pc;
-    }
-    
-    .fot-left{
-        margin-top: 2pc;
-        display: inline;
-        width: 100%;
-      margin-bottom:2pc;
-    }
-    
-    .fot-left p{
-      margin-top:-3pc;
-      margin-bottom: 2pc;
-      margin-left: 2pc;
-    }
-    .fot-left svg{
-      margin-top:-2pc;
-      margin-button:-0.5pc
-    }
-    #mai{
-      margin-top: -8pc;
-    }
-    #xamp{
-      margin-top: -1.9pc;
-    } 
-    
-    
-    .fot-mid{
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-      margin-top: 2pc;
-      margin-bottom: 3pc;
-    }
-    .fotmid{
-        display: block;
-        justify-content: space-around;
-        width: 30%;
-    }
-    
-    .fotmidl{
-        display: block;
-        justify-content: space-around;
-        width: 30%;
-    }
-    
-    .fot-right{
-        display: flex;
-        justify-content: space-around;
-        width: 20%;
-    }
-    .fot-right svg{
-      height: 30%;
-      width: 30%;
-    }
-      
+@media (max-width: 375px){
+  
+  
+#nav-header {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: auto;
+    height: 60px;
+    overflow: hidden;
+
 }
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    width: 20%;
+  
+
+
+}
+
+.nav-left{
+    width: 60%;
+    height: 60px;
+    font-weight: 400;
+    display: flex;
+    margin-top: 2pc;
+    justify-content: space-between;
+    text-decoration: none;
+    color: hsl(0, 0%, 75%);
+
+}
+
+.nav-left a{
+    color: hsl(243, 87%, 12%);
+    text-decoration: none;
+}
+
+.first{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 3pc;
+    margin-bottom: 4pc;
+}
+
+.f-left{
+    width: 80%;
+    justify-content: space-around;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(243, 87%, 12%);
+    margin: 12px;
+    margin-left: 25px;
+    padding: 12px;
+
+}
+
+.f-left h1,p{
+    display: block;
+}
+
+.f-left input{
+    width: 90%;
+    height: 28px;
+    border: 1px solid hsl(243, 87%, 12%);
+    border-radius: 2px;
+    display: inline;
+    padding: 4px;
+    
+}
+.f-left input :hover{
+    cursor:pointer;
+}
+.f-left input::placeholder{
+    color: hsl(0, 0%, 75%);
+    text-align: left;
+    padding-left: 10px;
+    
+}
+.f-left button{
+    display: block;
+    background-color: hsl(224, 93%, 58%);
+    color: #ffff;
+    padding: 2px;
+    margin: 4px;
+    width: 90%;
+    height: 40px;
+    border-radius: 3px;
+    border:none;
+    margin-top:15px;
+
+}
+.f-left button:hover{
+    cursor: pointer;
+}
+.f-right{
+   
+    width: 60%;
+    justify-content: space-around;
+
+}
+
+.f-right img{
+    width: 80%;
+    height: 80%;
+    margin-top: 2.5pc;
+    margin-left: 1pc;
+    padding-left: 1pc;
+}
+
+
+.second{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: max-content;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+    background-image: url('bg-curve-desktop.svg'); 
+    background-repeat: no-repeat; 
+    background-size: cover ;
+    background-position: center;
+    background-attachment:initial;
+    
+
+}
+
+.s-left{
+    width: 80%;
+    justify-content: space-around;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(243, 87%, 12%);
+    margin: 12px;
+    margin-left: 25px;
+    padding: 12px;
+    display: block;
+
+}
+
+.s-left h1,p{
+    display: block;
+    
+}
+
+.s-left a{
+    color:hsl(170, 45%, 43%);
+    
+}
+
+  .see{
+    margin-left:4pc;}
+
+
+.card{
+    background-color: #ffff;
+    color:hsl(243, 87%, 12%);
+    display: block;
+    width: 85%;
+    height: 23vh;
+    font-size: 10px;
+    margin-top: 2pc;
+    margin-left:18px;
+    margin-bottom: 4pc;
+    border-radius: 0.5pc;
+    box-shadow: 3px 5px 6px 5px rgb(190, 188, 184);
+
+}
+
+.card img{
+    margin-top: 2pc;
+    margin-left: 1.5pc;
+}
+
+.card p{
+    margin-bottom: 1.5pc;
+    display: block;
+    
+}
+.card-card{
+    margin-top: 2pc;
+}
+.card-card img{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    border-color:#ffff;
+    margin-left: 1pc;
+    margin-top: 2pc;
+}
+
+.cardleft{
+    margin-top: -4pc;
+    margin-left: 2pc;
+}
+.cardleft h2{
+    display: block;
+    margin-left: 2.3pc;
+    margin-top: 2.5pc;
+
+}
+
+.card p{
+    display: block;
+    margin-left: 2.3pc;
+    margin-top: -10px;
+    
+
+}
+
+.s-right{
+    width: 60%;
+    justify-content: space-around;
+
+}
+
+.s-right img{
+    width: 80%;
+    height: 60%;
+    margin-top: 7pc;
+    margin-left: 1pc;
+    padding-left: 1pc;
+
+}
+
+.third{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+    background-color: hsl(238, 22%, 44%);
+    
+
+
+
+}
+
+.t-left{
+    width: 60%;
+    justify-content: space-around;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffff;
+    margin: 12px;
+    margin-left: 75px;
+    padding: 12px;
+    display: block;
+}
+
+.t-left h3{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    display: block;
+    margin-top: 3pc;
+    
+}
+
+.t-left p{
+    display: block;
+    color: hsl(0, 0%, 75%);
+}
+
+.t-right {
+    width: 80%;
+    justify-content: space-around;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(243, 87%, 12%);
+    margin: 12px;
+    margin-left: 75px;
+    margin-top: -1pc;
+    padding: 12px;
+    display: block;
+}
+
+.t-right input{
+    width: 70%;
+    height: 28px;
+    border-radius: 2px;
+    display: inline;
+    padding: 4px;
+    border: none;
+}
+
+.t-right button{
+    display: inline;
+    background-color: hsl(224, 93%, 58%);
+    color: #ffff;
+    padding: 2px;
+    margin: 6px;
+    margin-top: 10px;
+    margin-left: -2px;
+    width: 73%;
+    height: 36px;
+    border-radius: 5px;
+    border:none;
+}
+
+.t-right input::placeholder{
+    color: hsl(0, 0%, 75%);
+    text-align: left;
+    padding-left: 10px;
+
+}
+
+.t-right input :hover{
+    cursor:pointer;
+}
+
+.t-right button:hover {
+    cursor: pointer;
+}
+
+.footer{
+    background-color: hsl(243, 87%, 12%);
+    width: 100%;
+    height: 100vh;
+}
+
+.foot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+    background-color: hsl(243, 87%, 12%);
+    color: #ffff;
+}
+
+
+.footlog{
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 5pc;
+    width: 100%;
+    
+}
+
+.footlog svg{
+    margin-top: 5pc;
+    margin-left: 4.8pc;
+}
+
+.footor{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.8pc;
+    margin-top: 3pc;
+}
+
+.fot-left{
+    margin-top: 2pc;
+    display: inline;
+    width: 100%;
+  margin-bottom:2pc;
+}
+
+.fot-left p{
+  margin-top:-3pc;
+  margin-bottom: 2pc;
+  margin-left: 2pc;
+}
+.fot-left svg{
+  margin-top:-2pc;
+  margin-bottom:-0.5pc;
+}
+#mai{
+  margin-top: -8pc;
+}
+#xamp{
+  margin-top: -1.9pc;
+}
+
+
+
+
+.fot-mid{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  margin-top: 2pc;
+  margin-bottom: 3pc;
+}
+.fotmid{
+    display: block;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.fotmidl{
+    display: block;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.fot-right{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+.fot-right svg{
+  height: 30%;
+  width: 30%;
+}
+  
+  
+}  
 
 
 
@@ -660,6 +664,7 @@
 .third{
     display: flex;
     width: 100%;
+    flex-direction: row;
     justify-content: space-between;
     font-family: "Open Sans", sans-serif;
     background-color: hsl(238, 22%, 44%);
@@ -747,10 +752,10 @@
     cursor: pointer;
 }
 
-footer{
+.footer{
     background-color: hsl(243, 87%, 12%);
     width: 100%;
-    height: 38vh;
+    height: 100vh;
 }
 
 .foot{
@@ -810,5 +815,4 @@ footer{
 
 
 }
-
 
