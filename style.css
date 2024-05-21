@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-@media (max-width: 375px){
+@media only screen and (min-width: 375px) {
   
   
 #nav-header {
@@ -76,6 +76,26 @@
     display: block;
 }
 
+
+.messages {
+    flex: 1 0 100%;
+  }
+  .messages span {
+    display: none;
+  }
+  
+  .validateme:invalid {
+    border: 1px solid rgb(180, 58, 78);
+  }
+  .validateme:invalid ~ .messages .error {
+    display: block;
+    color: rgb(180, 58, 78);
+  }
+
+.f-left input:focus{
+    border-color: rgb(180, 58, 78);
+}
+
 .f-left input{
     width: 90%;
     height: 28px;
@@ -94,6 +114,19 @@
     padding-left: 10px;
     
 }
+
+
+span.validation-message {
+
+    color: var(--color-error);    
+
+    font-size: var(--font-size-xs);   
+
+    margin-left: var(--space-none);
+
+}
+
+
 .f-left button{
     display: block;
     background-color: hsl(224, 93%, 58%);
@@ -303,6 +336,27 @@
     border: none;
 }
 
+.messages {
+    flex: 1 0 100%;
+  }
+  .messages span {
+    display: none;
+  }
+  
+  .validateme:invalid {
+    border: 1px solid rgb(180, 58, 78);
+  }
+  .validateme:invalid ~ .messages .error {
+    display: block;
+    color: rgb(180, 58, 78);
+  }
+
+.t-left input:focus{
+    border-color: rgb(180, 58, 78);
+}
+
+c
+
 .t-right button{
     display: inline;
     background-color: hsl(224, 93%, 58%);
@@ -478,6 +532,7 @@
 
 .first{
     display: flex;
+    flex-direction: row;
     width: 100%;
     height: fit-content;
     justify-content: space-between;
@@ -488,6 +543,7 @@
 
 .f-left{
     width: 50%;
+    flex-direction: column;
     justify-content: space-around;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -503,25 +559,49 @@
     display: block;
 }
 
+
+
 .f-left input{
     width: 50%;
     height: 22px;
     border: 1px solid hsl(243, 87%, 12%);
     border-radius: 2px;
-    display: inline;
+    display: flex;
     padding: 4px;
     
 }
 .f-left input :hover{
     cursor:pointer;
 }
+
+.messages {
+    flex: 1 0 100%;
+  }
+  .messages span {
+    display: none;
+  }
+  
+  .validateme:invalid {
+    border: 1px solid rgb(180, 58, 78);
+  }
+  .validateme:invalid ~ .messages .error {
+    display: block;
+    color: rgb(180, 58, 78);
+  }
+
+.f-left input:focus{
+    border-color: rgb(180, 58, 78);
+}
+
+
+
 .f-left input::placeholder{
     color: hsl(0, 0%, 75%);
     text-align: left;
     padding-left: 10px;
 }
 .f-left button{
-    display: inline;
+    display: flex;
     background-color: hsl(224, 93%, 58%);
     color: #ffff;
     padding: 2px;
@@ -554,6 +634,7 @@
 .second{
     display: flex;
     width: 100%;
+    flex-direction: row;
     height: max-content;
     justify-content: space-between;
     font-family: "Open Sans", sans-serif;
@@ -723,6 +804,34 @@
     border: none;
 }
 
+
+.messages {
+    flex: 1 0 100%;
+  }
+  .messages span {
+    display: none;
+  }
+  
+  .validateme:invalid {
+    border: 1px solid rgb(180, 58, 78);
+  }
+  .validateme:invalid ~ .messages .error {
+    display: block;
+    color: rgb(180, 58, 78);
+  }
+
+.t-right input:focus{
+    border-color: rgb(180, 58, 78);
+}
+
+.terror{
+    color: rgb(180, 58, 78);
+}
+
+.t-right input:focus{
+    border-color: rgb(77, 28, 48);
+}
+
 .t-right button{
     display: inline;
     background-color: hsl(224, 93%, 58%);
@@ -792,10 +901,12 @@
 
 .fot-mid{
     display: flex;
+    flex-direction: row;
     width: 60%;
 }
 .fotmid{
-    display: block;
+    display: inline;
+    flex-direction: column;
     justify-content: space-around;
     width: 30%;
 }
@@ -808,6 +919,7 @@
 
 .fot-right{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     width: 20%;
 }

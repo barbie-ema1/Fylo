@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylemobile.css">
     <title>Fylo</title>
 </head>
 <body >
@@ -29,7 +30,10 @@
                 <h1>All your files are in one secured location, accessible anywhere.</h1>
                 <p><smaller>Fylo stores your most important file in one secure location. Access them wherever you need, share and collaborate with friends, family and co-workers</smaller></p>
                 
-                <input type="email" placeholder="Enter your email..." pattern="[^ @]*@[^ @]*">
+                <input class="validateme" type="email" placeholder="Enter your email..." pattern="[^ @]*@[^ @]*">
+                <p class="messages">
+                    <span class="error"><small>Please check your email</small></span>
+                </p>
                 <button type="submit">Get Started</button>
                 
             </div>
@@ -75,6 +79,9 @@
 
             <div class="t-right">
                 <input type="email" placeholder="email@example.com" pattern="[^ @]*@[^ @]*">
+                <p class="messages">
+                    <span class="error terror"><small>Please check your email</small></span>
+                </p>
                 <br>
                 <button type="submit">Get Started For Free</button>
 
