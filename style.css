@@ -1,10 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
 
-@media only screen and (min-width: 375px) {
-  
-  
+
+
+header,button,input,h2{
+    font-family: "Raleway";
+}
+
+/*--page styling--*/
+
+.page{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---navigation bar---*/
+
+.head{
+    display: block;
+    justify-content: space-between;
+    padding: auto;
+    width: 100%;
+
+}
+
 #nav-header {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -19,912 +47,1287 @@
     height: 60px;
     overflow: hidden;
 
+}
+
+nav a{
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+    justify-content: space-around;
+    padding-left: 1pc;
+    
 }
 
 .logo{
     display: flex;
     justify-content: space-around;
     height: 30px;
-    width: 20%;
+    width: 30%;
+    margin-left: -8pc;
   
 
 
 }
 
 .nav-left{
-    width: 60%;
+    width: 30%;
     height: 60px;
     font-weight: 400;
     display: flex;
     margin-top: 2pc;
-    justify-content: space-between;
+    
+    justify-content: space-around;
     text-decoration: none;
     color: hsl(0, 0%, 75%);
 
 }
 
-.nav-left a{
-    color: hsl(243, 87%, 12%);
-    text-decoration: none;
-}
+/*--body styling--*/
+/*--first row--*/
 
 .first{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     width: 100%;
-    height: fit-content;
     justify-content: space-between;
-    font-family: "Open Sans", sans-serif;
-    margin-top: 3pc;
-    margin-bottom: 4pc;
+    margin-top: 1.2pc;
+
 }
 
 .f-left{
-    width: 80%;
-    justify-content: space-around;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    display: flex;
+    width:40%;
+    flex-direction: column;
     color: hsl(243, 87%, 12%);
     margin: 12px;
-    margin-left: 25px;
     padding: 12px;
 
 }
 
-.f-left h1,p{
-    display: block;
+.f-left h1{
+    color: hsl(243, 87%, 12%);
+    font-weight: 700;
+    font-family: "Raleway";
+
 }
 
-
-.messages {
-    flex: 1 0 100%;
-  }
-  .messages span {
-    display: none;
-  }
-  
-  .validateme:invalid {
-    border: 1px solid rgb(180, 58, 78);
-  }
-  .validateme:invalid ~ .messages .error {
-    display: block;
-    color: rgb(180, 58, 78);
-  }
-
-.f-left input:focus{
-    border-color: rgb(180, 58, 78);
+.f-left p{
+    width: 70%;
+    
 }
 
-.f-left input{
-    width: 90%;
-    height: 28px;
+.f-left form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.f-left form input{
+    outline: none;
+    margin-top: 1pc;
+    width: 80%;
+    height: 40px;
     border: 1px solid hsl(243, 87%, 12%);
     border-radius: 2px;
-    display: inline;
     padding: 4px;
     
 }
-.f-left input :hover{
-    cursor:pointer;
+
+.active:focus{
+    border: rgb(180, 58, 78);
+    outline-color: rgb(204, 101, 101);
+    outline-style: solid;
 }
-.f-left input::placeholder{
-    color: hsl(0, 0%, 75%);
+
+.f-left form input :hover{
+    cursor:pointer;
+    
+}
+.f-left form input::placeholder{
+    color: hsl(0, 33%, 6%);
     text-align: left;
     padding-left: 10px;
     
 }
 
 
-span.validation-message {
-
-    color: var(--color-error);    
-
-    font-size: var(--font-size-xs);   
-
-    margin-left: var(--space-none);
-
-}
 
 
-.f-left button{
-    display: block;
+.f-left form button{
     background-color: hsl(224, 93%, 58%);
+    
     color: #ffff;
     padding: 2px;
     margin: 4px;
-    width: 90%;
+    margin-left: 1pc;
+    width: 50%;
     height: 40px;
     border-radius: 3px;
     border:none;
     margin-top:15px;
 
 }
-.f-left button:hover{
+.f-left form button:hover{
     cursor: pointer;
 }
-.f-right{
-   
-    width: 60%;
-    justify-content: space-around;
 
+.f-right{
+    display: flex;
+    width: 50%;
 }
 
 .f-right img{
-    width: 80%;
-    height: 80%;
-    margin-top: 2.5pc;
-    margin-left: 1pc;
-    padding-left: 1pc;
+    height: 85%;
+    width: 70%;
 }
 
+
+
+/*---second row--*/
 
 .second{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     width: 100%;
-    height: max-content;
+    height: 70%;
     justify-content: space-between;
-    font-family: "Open Sans", sans-serif;
-    background-image: url('bg-curve-desktop.svg'); 
-    background-repeat: no-repeat; 
-    background-size: cover ;
-    background-position: center;
-    background-attachment:initial;
-    
+    margin-top: 1.2pc;
 
 }
 
+.second img{
+    height: fit-content;
+}
 .s-left{
-    width: 80%;
-    justify-content: space-around;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    display: flex;
+    width:45%;
+    flex-direction: column;
     color: hsl(243, 87%, 12%);
     margin: 12px;
-    margin-left: 25px;
     padding: 12px;
-    display: block;
-
 }
 
-.s-left h1,p{
-    display: block;
-    
+.s-left h1{
+    color: hsl(243, 87%, 12%);
+    font-weight: 700;
+    margin-bottom: 1.2pc;
+    font-family: "Raleway";
 }
+
+.s-left p{
+    font-size: small;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
 
 .s-left a{
+    margin-top: 1.2pc;
     color:hsl(170, 45%, 43%);
-    
 }
 
-  .see{
-    margin-left:4pc;}
-
+/*--testmonial--*/
 
 .card{
-    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFF;
+    border-radius: 5px;
+    padding:10px;
+    margin-top: 1.2pc;
+    width: 65%;
+    height: 50%;
     color:hsl(243, 87%, 12%);
-    display: block;
-    width: 85%;
-    height: 23vh;
-    font-size: 10px;
-    margin-top: 2pc;
-    margin-left:18px;
-    margin-bottom: 4pc;
-    border-radius: 0.5pc;
-    box-shadow: 3px 5px 6px 5px rgb(190, 188, 184);
-
+    box-shadow: 0px 0px 10px rgb(190, 188, 184);
+    justify-content: space-between;
 }
 
-.card img{
-    margin-top: 2pc;
-    margin-left: 1.5pc;
-}
-
-.card p{
-    margin-bottom: 1.5pc;
-    display: block;
+.cardbody svg, .cardbody p{
+    margin-top: 1.3pc;
+    margin-left: 1.2pc;
     
 }
+
 .card-card{
-    margin-top: 2pc;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1pc;
 }
-.card-card img{
-    width: 15%;
-    height: 15%;
+
+.card-img img{
+    height: 55%;
+    width: 55%;
     border-radius: 50%;
-    border-color:#ffff;
-    margin-left: 1pc;
-    margin-top: 2pc;
+    margin-top: 1pc;
+    margin-left: 1.2pc;
 }
 
-.cardleft{
-    margin-top: -4pc;
-    margin-left: 2pc;
+.card-left{
+    margin-top: 1pc;
 }
-.cardleft h2{
-    display: block;
-    margin-left: 2.3pc;
-    margin-top: 2.5pc;
-
+.card-left h3{
+    font-weight: 700;
+    margin-top: -0.1pc;
+}
+.card-left p{
+    margin-top: 0.5pc;
 }
 
-.card p{
-    display: block;
-    margin-left: 2.3pc;
-    margin-top: -10px;
-    
 
-}
+
+
+
+
 
 .s-right{
-    width: 60%;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
 
 }
 
 .s-right img{
+    margin-top: 3pc;
+    height: 75%;
     width: 80%;
-    height: 60%;
-    margin-top: 7pc;
-    margin-left: 1pc;
-    padding-left: 1pc;
-
 }
+
+
+/*--third row--*/
 
 .third{
     display: flex;
-    flex-flow: column;
+    flex-direction: row;
+    background-color:hsl(238, 22%, 44%);
     width: 100%;
     justify-content: space-between;
-    font-family: "Open Sans", sans-serif;
-    background-color: hsl(238, 22%, 44%);
+    margin-top: 1.2pc;
+    color: #FFFF;
     
-
-
-
 }
 
 .t-left{
-    width: 60%;
-    justify-content: space-around;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #ffff;
-    margin: 12px;
-    margin-left: 75px;
-    padding: 12px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+
 }
 
-.t-left h3{
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    display: block;
-    margin-top: 3pc;
-    
+.t-left h2{
+    font-weight: 700;
+    margin-top: 5pc;
+    margin: 12px;
+    padding: 12px;
+    margin-bottom: 1pc;
+    font-family: "Raleway";
 }
 
 .t-left p{
-    display: block;
-    color: hsl(0, 0%, 75%);
-}
-
-.t-right {
-    width: 80%;
-    justify-content: space-around;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: hsl(243, 87%, 12%);
     margin: 12px;
-    margin-left: 75px;
-    margin-top: -1pc;
     padding: 12px;
-    display: block;
-}
-
-.t-right input{
+    font-size: small;
+    margin-top: -1pc;
     width: 70%;
-    height: 28px;
-    border-radius: 2px;
-    display: inline;
-    padding: 4px;
-    border: none;
-}
-
-.messages {
-    flex: 1 0 100%;
-  }
-  .messages span {
-    display: none;
-  }
-  
-  .validateme:invalid {
-    border: 1px solid rgb(180, 58, 78);
-  }
-  .validateme:invalid ~ .messages .error {
-    display: block;
-    color: rgb(180, 58, 78);
-  }
-
-.t-left input:focus{
-    border-color: rgb(180, 58, 78);
-}
-
-c
-
-.t-right button{
-    display: inline;
-    background-color: hsl(224, 93%, 58%);
-    color: #ffff;
-    padding: 2px;
-    margin: 6px;
-    margin-top: 10px;
-    margin-left: -2px;
-    width: 73%;
-    height: 36px;
-    border-radius: 5px;
-    border:none;
-}
-
-.t-right input::placeholder{
-    color: hsl(0, 0%, 75%);
-    text-align: left;
-    padding-left: 10px;
+    font-size: 400;
 
 }
 
-.t-right input :hover{
-    cursor:pointer;
-}
-
-.t-right button:hover {
-    cursor: pointer;
-}
-
-.footer{
-    background-color: hsl(243, 87%, 12%);
-    width: 100%;
-    height: 100vh;
-}
-
-.foot{
-    width: 100%;
+.t-right{
     display: flex;
     flex-direction: column;
-
-    justify-content: space-between;
-    font-family: "Open Sans", sans-serif;
-    background-color: hsl(243, 87%, 12%);
-    color: #ffff;
+    width: 50%;
 }
 
-
-.footlog{
-    display: block;
-    justify-content: space-between;
-    margin-bottom: 5pc;
+.t-right form{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+}
+
+.t-right form input{
+    outline: none;
+    margin-top: 1pc;
+    width: 60%;
+    height: 40px;
+    border: 1px solid hsl(243, 87%, 12%);
+    border-radius: 2px;
+    padding: 4px;
     
 }
 
-.footlog svg{
-    margin-top: 5pc;
-    margin-left: 4.8pc;
+.t-right form input :hover{
+    cursor:pointer;
+    
+}
+.t-right form input::placeholder{
+    color: hsl(0, 33%, 6%);
+    text-align: left;
+    padding-left: 10px;
+    
 }
 
-.footor{
+
+
+
+.t-right form button{
+    background-color: hsl(224, 93%, 58%);
+    
+    color: #ffff;
+    padding: 2px;
+    margin: 4px;
+    margin-left: -0.1pc;
+    width: 45%;
+    height: 40px;
+    border-radius: 3px;
+    border:none;
+    margin-top:5px;
+    cursor: pointer;
+
+}
+
+
+/*--footer section--*/
+
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color:#ffff;
     display: flex;
     flex-direction: column;
-    margin-left: 4.8pc;
-    margin-top: 3pc;
 }
 
-.fot-left{
+.footer{
     margin-top: 2pc;
-    display: inline;
+    margin: 12px;
+    padding: 12px;
+
+}
+
+.footlog{
+    margin-top: 3pc;
+    margin-bottom: 2pc;
+}
+
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3pc;
     width: 100%;
-  margin-bottom:2pc;
+
 }
 
-.fot-left p{
-  margin-top:-3pc;
-  margin-bottom: 2pc;
-  margin-left: 2pc;
-}
-.fot-left svg{
-  margin-top:-2pc;
-  margin-bottom:-0.5pc;
-}
-#mai{
-  margin-top: -8pc;
-}
-#xamp{
-  margin-top: -1.9pc;
-}
-
-
-
-
-.fot-mid{
+.foot-left{
     display: flex;
     flex-direction: column;
-    width: 60%;
-  margin-top: 2pc;
-  margin-bottom: 3pc;
+    width: 50%;
+    
 }
+.foot-left p{
+    margin-left: 2pc;
+    margin-top: -1pc;
+    font-size: small;
+}
+
+.foot-left svg{
+    margin-top: 0.5pc;
+}
+
+.foot-mid{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    font-size: small;
+}
+
 .fotmid{
-    display: block;
-    justify-content: space-around;
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1pc;
+    width: 40%;
+}
+
+.foot-mid a{
+    text-decoration: none;
+    color: #FFFF;
+}
+
+.foot-mid a:hover{
+    color: hsl(170, 45%, 43%) ;
 }
 
 .fotmidl{
-    display: block;
-    justify-content: space-around;
-    width: 30%;
-}
-
-.fot-right{
     display: flex;
-    justify-content: space-around;
-    width: 20%;
-}
-.fot-right svg{
-  height: 30%;
-  width: 30%;
-}
-  
-  
-}  
-
-
-
-
-@media only screen and (max-width: 1440px) {
-
-
-#nav-header {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    padding: auto;
-    height: 60px;
-    overflow: hidden;
-
+    flex-direction: column;
 }
 
+.footright{
+    width: 40%;
+}
+.social{
+    color: #FFF;
+}
+
+
+
+
+
+
+@media screen and (max-width:1280px) {
+
+    
 .logo{
     display: flex;
     justify-content: space-around;
-    height: 40px;
-    width: 20%;
-    margin-left: 2pc;
+    height: 30px;
+    width: 30%;
+    margin-left: -3pc;
+  
 
 
 }
 
 .nav-left{
-    width: 30%;
+    width: 50%;
     height: 60px;
     font-weight: 400;
     display: flex;
+    margin-top: 2pc;
+    
     justify-content: space-around;
     text-decoration: none;
     color: hsl(0, 0%, 75%);
 
 }
 
-.nav-left a{
-    color: hsl(243, 87%, 12%);
-    text-decoration: none;
-}
-
-.first{
+.foot-mid{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: fit-content;
-    justify-content: space-between;
-    font-family: "Open Sans", sans-serif;
-    margin-top: 3pc;
-    margin-bottom: 4pc;
+    width: 80%;
+    font-size: small;
 }
 
-.f-left{
-    width: 50%;
+.fotmid{
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: hsl(243, 87%, 12%);
-    margin: 12px;
-    margin-left: 75px;
-    padding: 12px;
-
-}
-
-.f-left h1,p{
-    display: block;
-}
-
-
-
-.f-left input{
-    width: 50%;
-    height: 22px;
-    border: 1px solid hsl(243, 87%, 12%);
-    border-radius: 2px;
-    display: flex;
-    padding: 4px;
-    
-}
-.f-left input :hover{
-    cursor:pointer;
-}
-
-.messages {
-    flex: 1 0 100%;
-  }
-  .messages span {
-    display: none;
-  }
-  
-  .validateme:invalid {
-    border: 1px solid rgb(180, 58, 78);
-  }
-  .validateme:invalid ~ .messages .error {
-    display: block;
-    color: rgb(180, 58, 78);
-  }
-
-.f-left input:focus{
-    border-color: rgb(180, 58, 78);
-}
-
-
-
-.f-left input::placeholder{
-    color: hsl(0, 0%, 75%);
-    text-align: left;
-    padding-left: 10px;
-}
-.f-left button{
-    display: flex;
-    background-color: hsl(224, 93%, 58%);
-    color: #ffff;
-    padding: 2px;
-    margin: 6px;
-    width: 30%;
-    height: 32px;
-    border-radius: 3px;
-    border:none;
-
-}
-.f-left button:hover{
-    cursor: pointer;
-}
-.f-right{
-   
-    width: 60%;
-    justify-content: space-around;
-
-}
-
-.f-right img{
-    width: 80%;
-    height: 80%;
-    margin-top: 2.5pc;
-    margin-left: 1pc;
-    padding-left: 1pc;
-}
-
-
-.second{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    height: max-content;
-    justify-content: space-between;
-    font-family: "Open Sans", sans-serif;
-    background-image: url('bg-curve-desktop.svg'); 
-    background-repeat: no-repeat; 
-    background-size: cover ;
-    background-position: center;
-    background-attachment:initial;
-    
-
-}
-
-.s-left{
-    width: 50%;
-    justify-content: space-around;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: hsl(243, 87%, 12%);
-    margin: 12px;
-    margin-left: 75px;
-    padding: 12px;
-    display: block;
-
-}
-
-.s-left h1,p{
-    display: block;
-    
-}
-
-.s-left a{
-    color:hsl(170, 45%, 43%);
-    
-}
-
-
-.card{
-    background-color: #ffff;
-    color:hsl(243, 87%, 12%);
-    display: block;
-    width: 50%;
-    height: 40%;
-    font-size: 10px;
-    margin-top: 2pc;
-    margin-bottom: 4pc;
-    border-radius: 0.5pc;
-    box-shadow: 3px 5px 6px 5px rgb(190, 188, 184);
-
-}
-
-.card h1{
-    margin-top: 1.5pc;
-    margin-left: 1.5pc;
-}
-
-.card p{
-    margin-bottom: 1.5pc;
-    display: block;
-    
-}
-.card-card{
-    margin-top: 2pc;
-}
-.card-card img{
-    width: 15%;
-    height: 15%;
-    border-radius: 50%;
-    border-color:#ffff;
-    margin-left: 1pc;
-    margin-top: -10px;
-}
-
-.cardleft{
-    margin-top: -4pc;
-    margin-left: 2pc;
-}
-.cardleft h2{
-    display: block;
-    margin-left: 2.3pc;
-    margin-top: 1pc;
-
-}
-
-.card p{
-    display: block;
-    margin-left: 2.3pc;
-    margin-top: -10px;
-    
-
-}
-
-.s-right{
-    width: 60%;
-    justify-content: space-around;
-
-}
-
-.s-right img{
-    width: 80%;
-    height: 60%;
-    margin-top: 7pc;
-    margin-left: 1pc;
-    padding-left: 1pc;
-
-}
-
-.third{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: "Open Sans", sans-serif;
-    background-color: hsl(238, 22%, 44%);
-    
-
-
-
-}
-
-.t-left{
-    width: 30%;
-    justify-content: space-around;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #ffff;
-    margin: 12px;
-    margin-left: 75px;
-    padding: 12px;
-    display: block;
-}
-
-.t-left h3{
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    display: block;
-    margin-top: 3pc;
-    
-}
-
-.t-left p{
-    display: block;
-    color: hsl(0, 0%, 75%);
-}
-
-.t-right {
-    width: 50%;
-    justify-content: space-around;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: hsl(243, 87%, 12%);
-    margin: 12px;
-    margin-left: 75px;
-    margin-top: 3.5pc;
-    padding: 12px;
-    display: block;
-}
-
-.t-right input{
-    width: 70%;
-    height: 22px;
-    border-radius: 2px;
-    display: inline;
-    padding: 4px;
-    border: none;
-}
-
-
-.messages {
-    flex: 1 0 100%;
-  }
-  .messages span {
-    display: none;
-  }
-  
-  .validateme:invalid {
-    border: 1px solid rgb(180, 58, 78);
-  }
-  .validateme:invalid ~ .messages .error {
-    display: block;
-    color: rgb(180, 58, 78);
-  }
-
-.t-right input:focus{
-    border-color: rgb(180, 58, 78);
-}
-
-.terror{
-    color: rgb(180, 58, 78);
-}
-
-.t-right input:focus{
-    border-color: rgb(77, 28, 48);
-}
-
-.t-right button{
-    display: inline;
-    background-color: hsl(224, 93%, 58%);
-    color: #ffff;
-    padding: 2px;
-    margin: 6px;
-    margin-top: 10px;
-    margin-left: -2px;
-    width: 30%;
-    height: 32px;
-    border-radius: 5px;
-    border:none;
-}
-
-.t-right input::placeholder{
-    color: hsl(0, 0%, 75%);
-    text-align: left;
-    padding-left: 10px;
-
-}
-
-.t-right input :hover{
-    cursor:pointer;
-}
-
-.t-right button:hover {
-    cursor: pointer;
-}
-
-.footer{
-    background-color: hsl(243, 87%, 12%);
-    width: 100%;
-    height: 100vh;
-}
-
-.foot{
-    width: 100%;
-
-    justify-content: space-between;
-    font-family: "Open Sans", sans-serif;
-    background-color: hsl(243, 87%, 12%);
-    color: #ffff;
-}
-
-
-.footlog{
-    display: block;
-    justify-content: space-between;
-    margin-bottom: 2pc;
-    width: 100%;
-}
-
-.footlog svg{
-    margin-top: 5pc;
-    margin-left: 4.8pc;
-}
-
-.footor{
-    display: flex;
-    margin-left: 4.8pc;
-}
-
-.fot-left{
-    display: inline;
+    margin-bottom: 1pc;
     width: 40%;
 }
 
-.fot-mid{
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-}
-.fotmid{
-    display: inline;
-    flex-direction: column;
-    justify-content: space-around;
+.footright{
     width: 30%;
 }
 
-.fotmidl{
-    display: block;
-    justify-content: space-around;
-    width: 30%;
+    
 }
 
-.fot-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 20%;
+@media (min-width:912px)and(max-width:1368px){
+
+    .logo{
+        display: flex;
+        justify-content: space-around;
+        height: 30px;
+        width: 30%;
+        margin-left: -3pc;
+      
+    
+    
+    }
+    
+    .nav-left{
+        width: 50%;
+        height: 60px;
+        font-weight: 400;
+        display: flex;
+        margin-top: 2pc;
+        
+        justify-content: space-around;
+        text-decoration: none;
+        color: hsl(0, 0%, 75%);
+    
+    }
+
+
+
+    .f-left{
+        font-size: 16px;
+    }
+    .f-left p{
+        font-size: 16px;
+    }
+
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFF;
+        border-radius: 5px;
+        padding:10px;
+        margin-top: 1.2pc;
+        width: 75%;
+        height: 45%;
+        font-size: 8px;
+        color:hsl(243, 87%, 12%);
+        box-shadow: 0px 0px 10px rgb(190, 188, 184);
+        justify-content: space-between;
+    }
+
+    
 }
 
 
 
+@media  (min-width:412px) and (max-width: 911px){
+
+    .logo{
+        display: flex;
+        justify-content: space-around;
+        height: 30px;
+        width: 40%;
+        margin-left: -0.5pc;
+      
+    
+    
+    }
+    
+    .nav-left{
+        width: 60%;
+        height: 60px;
+        font-weight: 400;
+        display: flex;
+        margin-top: 2pc;
+        
+        justify-content: space-around;
+        text-decoration: none;
+        color: hsl(0, 0%, 75%);
+    
+    }
+
+    .f-left{
+        display: flex;
+        width:60%;
+        flex-direction: column;
+        color: hsl(243, 87%, 12%);
+        margin: 12px;
+        padding: 12px;
+        font-size: 12px;
+    
+    }
+
+    .f-left p{
+        font-size: 8px;
+    }
+
+    .f-left form{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+    .f-left form input{
+        outline: none;
+        margin-top: 1pc;
+        width: 70%;
+        height: 30px;
+        border: 1px solid hsl(243, 87%, 12%);
+        border-radius: 2px;
+        padding: 3px;
+        
+    }
+
+
+    .f-left form button{
+        background-color: hsl(224, 93%, 58%);
+        
+        color: #ffff;
+        padding: 2px;
+        margin: 4px;
+        margin-left: 1pc;
+        width: 40%;
+        height: 28px;
+        border-radius: 3px;
+        border:none;
+        margin-top:15px;
+        font-size: 10px;
+    
+    }
+
+
+    .f-right{
+        display: flex;
+        width: 40%;
+    }
+    
+    .f-right img{
+        margin-top: 4pc;
+        height: 65%;
+        width: 70%;
+    }
+
+
+    .s-left{
+        display: flex;
+        width:45%;
+        flex-direction: column;
+        color: hsl(243, 87%, 12%);
+        margin: 12px;
+        padding: 12px;
+    }
+    
+    .s-left h1{
+        color: hsl(243, 87%, 12%);
+        font-weight: 700;
+        margin-bottom: 1.2pc;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFF;
+        border-radius: 5px;
+        padding:10px;
+        margin-top: 1.2pc;
+        width: 75%;
+        height: 25%;
+        font-size: 8px;
+        color:hsl(243, 87%, 12%);
+        box-shadow: 0px 0px 10px rgb(190, 188, 184);
+        justify-content: space-between;
+    }
+
+    .card svg,.cardbody p{
+        margin-top: 1pc;
+        margin-left: 0.2pc;
+        
+    }
+
+    .card p{
+        font-size: 6px;
+        width: 100%;
+    }
+
+
+    .card-card{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.2pc;
+    }
+    
+    .card-img img{
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+        margin-top: 1pc;
+        margin-left: 0.2pc;
+    }
+    
+    .card-left{
+        margin-top: 1pc;
+    }
+    .card-left h3{
+        font-weight: 700;
+        margin-top: -0.1pc;
+        margin-left: -0.3pc;
+    }
+    .card-left p{
+        margin-top: 0.5pc;
+        margin-left: -0.3pc;
+    }
+    
+    
+
+
+
+    .s-right{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        align-items: center;
+    
+    }
+    
+    .s-right img{
+        margin-top: 3pc;
+        height: 45%;
+        width: 45%;
+    }
+
+    .third{
+        display: flex;
+        flex-direction: row;
+        background-color:hsl(238, 22%, 44%);
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1.2pc;
+        color: #FFFF;
+        
+    }
+    
+    .t-left{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    
+    
+    }
+
+    .t-left p{
+        width: 90%;
+    }
+
+    .t-right form input{
+        outline: none;
+        margin-top: 1pc;
+        width: 80%;
+        height: 40px;
+        border: 1px solid hsl(243, 87%, 12%);
+        border-radius: 2px;
+        padding: 4px;
+        
+    }
+
+    .t-right form button{
+        background-color: hsl(224, 93%, 58%);
+        
+        color: #ffff;
+        padding: 2px;
+        margin: 4px;
+        margin-left: -0.1pc;
+        width: 75%;
+        height: 40px;
+        border-radius: 3px;
+        border:none;
+        margin-top:5px;
+        cursor: pointer;
+    
+    }
+
+    .foot-left{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        
+    }
+    .foot-left p{
+        margin-left: 2pc;
+        margin-top: -1pc;
+        font-size: small;
+        width: 20%;
+    }
+    
+    .foot-left svg{
+        margin-top: 0.5pc;
+    }
+    
+    .foot-mid{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        font-size: small;
+        margin-left: 3pc;
+    }
+    
+    .fotmid{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1pc;
+        width: 40%;
+    }
+
+    .footright{
+        width: 30%;
+    }
+}
+    
+
+
+@media (min-width:375px) and (max-width:667px) {
+
+    .logo{
+        display: flex;
+        justify-content: space-around;
+        height: 30px;
+        width: 30%;
+        margin-left: 1pc;
+      
+    
+    
+    }
+    
+    .nav-left{
+        width: 70%;
+        height: 60px;
+        font-weight: 400;
+        display: flex;
+        margin-top: 2pc;
+        
+        justify-content: space-around;
+        text-decoration: none;
+        color: hsl(0, 0%, 75%);
+    
+    }
+
+    .first{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1.2pc;
+    
+    }
+    
+    .f-left{
+        display: flex;
+        width:100%;
+        flex-direction: column;
+        color: hsl(243, 87%, 12%);
+        margin: 4px;
+        padding: 4px;
+        align-items: center;
+        
+    
+    }
+    .f-left h1{
+       width: 90%;
+        text-align: center;
+    }
+
+    .f-left p{
+        width: 85%;
+        text-align: center;
+    }
+
+    .f-left form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f-left form button{
+        width: 80%;
+        margin-left: 0.2pc;
+    }
+    
+
+    .f-right{
+        width: 100%;
+        align-items: center;
+    }
+    .f-right img{
+        margin-top: 4pc;
+        height: 75%;
+        width: 90%;
+        margin-bottom: 2pc;
+        margin-left: 1pc;
+    }
+
+    .second{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1.2pc;
+    
+    }
+    
+    .s-left{
+        display: flex;
+        width:100%;
+        flex-direction: column;
+        color: hsl(243, 87%, 12%);
+        margin: 4px;
+        padding: 4px;
+        align-items: center;
+        
+    
+    }
+    .s-left h1{
+       width: 100%;
+        text-align: center;
+        margin-left: 0.2pc;
+        font-size: 20px;
+    }
+
+    .s-left p{
+        margin-left: 0.5pc;
+    }
+    .s-left .see{
+        width: 85%;
+        text-align: center;
+    }
+
+    .card p{
+        text-align: left;
+        width: 90%;
+    }
+
+    .cardbody svg{
+        margin-top: 1.3pc;
+        margin-left: 0.5pc;
+        
+    }
+
+    .card-left h3{
+        font-weight: 700;
+        margin-top: -0.1pc;
+        margin-left: -0.5pc;
+    }
+    .card-left p{
+        margin-top: 0.5pc;
+        margin-left: -0.5pc;
+    }
+    
+
+
+    .s-right{
+        width: 100%;
+        align-items: center;
+    }
+    .s-right img{
+        margin-top: 4pc;
+        height: 75%;
+        width: 90%;
+        margin-bottom: 2pc;
+        margin-left: 1pc;
+    }
+
+
+    .third{
+        display: flex;
+        flex-direction: column;
+        background-color:hsl(238, 22%, 44%);
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1.2pc;
+        color: #FFFF;
+        
+    }
+    
+    .t-left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    
+    
+    }
+
+    .t-left p{
+        text-align: center;
+    }
+
+    .t-right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .t-right form input{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5pc;
+        
+
+    }
+
+    .t-right form button{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5pc;
+        margin-bottom: 3pc;
+        width: 60%;
+        align-items: center;
+        padding: 3px;
+        
+        
+    }
+    
+
+    .foot{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3pc;
+        width: 100%;
+    
+    }
+
+    .foot-left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2pc;
+        
+    }
+
+    .foot-mid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2pc;
+    }
+
+    .footright{
+        
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footright svg{
+        width: 40%;
+        height: 40%;
+        margin: 1pc 1pc;
+    }
+
+
+
 }
 
+@media (min-width:320px) and (max-width:554px) {
+
+    .logo{
+        display: flex;
+        justify-content: space-around;
+        height: 30px;
+        width: 30%;
+        margin-left: 1pc;
+      
+
+    }
+
+    .logo img{
+        height: 80%;
+        width: 80%;
+    }
+    
+    .nav-left{
+        width: 70%;
+        height: 60px;
+        font-weight: 400;
+        display: flex;
+        margin-top: 2pc;
+        
+        justify-content: space-around;
+        text-decoration: none;
+        color: hsl(0, 0%, 75%);
+    
+    }
+
+    .first{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1.2pc;
+    
+    }
+    
+    .f-left{
+        display: flex;
+        width:100%;
+        flex-direction: column;
+        color: hsl(243, 87%, 12%);
+        margin: 4px;
+        padding: 4px;
+        align-items: center;
+        
+    
+    }
+    .f-left h1{
+       width: 90%;
+        text-align: center;
+    }
+
+    .f-left p{
+        width: 85%;
+        text-align: center;
+    }
+
+    .f-left form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f-left form button{
+        width: 80%;
+        margin-left: 0.2pc;
+    }
+    
+
+    .f-right{
+        width: 100%;
+        align-items: center;
+    }
+    .f-right img{
+        margin-top: 4pc;
+        height: 75%;
+        width: 90%;
+        margin-bottom: 2pc;
+        margin-left: 1pc;
+    }
+
+    .second{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1.2pc;
+    
+    }
+    
+    .s-left{
+        display: flex;
+        width:100%;
+        flex-direction: column;
+        color: hsl(243, 87%, 12%);
+        margin: 4px;
+        padding: 4px;
+        align-items: center;
+        
+    
+    }
+    .s-left h1{
+       width: 100%;
+        text-align: center;
+        margin-left: 0.2pc;
+        font-size: 20px;
+    }
+
+    .s-left p{
+        margin-left: 0.5pc;
+    }
+    .s-left .see{
+        width: 85%;
+        text-align: center;
+    }
+
+    .card p{
+        text-align: left;
+        width: 90%;
+    }
+
+    .cardbody svg{
+        margin-top: 1.3pc;
+        margin-left: 0.5pc;
+        
+    }
+
+    .card-left h3{
+        font-weight: 700;
+        margin-top: -0.1pc;
+        margin-left: -0.5pc;
+    }
+    .card-left p{
+        margin-top: 0.5pc;
+        margin-left: -0.5pc;
+    }
+    
+
+
+    .s-right{
+        width: 100%;
+        align-items: center;
+    }
+    .s-right img{
+        margin-top: 4pc;
+        height: 75%;
+        width: 90%;
+        margin-bottom: 2pc;
+        margin-left: 1pc;
+    }
+
+
+    .third{
+        display: flex;
+        flex-direction: column;
+        background-color:hsl(238, 22%, 44%);
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1.2pc;
+        color: #FFFF;
+        
+    }
+    
+    .t-left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    
+    
+    }
+
+    .t-left p{
+        text-align: center;
+    }
+
+    .t-right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .t-right form input{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5pc;
+        
+
+    }
+
+    .t-right form button{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5pc;
+        margin-bottom: 3pc;
+        width: 60%;
+        align-items: center;
+        padding: 3px;
+        
+        
+    }
+    
+
+    .foot{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3pc;
+        width: 100%;
+    
+    }
+
+    .foot-left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2pc;
+        
+    }
+
+    .foot-mid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2pc;
+    }
+
+    .footright{
+        
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footright svg{
+        width: 40%;
+        height: 40%;
+        margin: 1pc 1pc;
+        color: #FFF;
+    }
+
+
+}
