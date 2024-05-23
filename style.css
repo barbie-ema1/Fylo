@@ -121,6 +121,15 @@ nav a{
     width: 100%;
 }
 
+
+.f-left form p{
+    display: flex;
+    flex-direction: column;
+    margin-top: -0.1pc;
+    margin-left: -6pc;
+    font-size: 14px;
+    color: rgb(204, 101, 101);
+}
 .f-left form input{
     outline: none;
     margin-top: 1pc;
@@ -354,6 +363,15 @@ nav a{
     border-radius: 2px;
     padding: 4px;
     
+}
+
+.t-right form p{
+    display: flex;
+    flex-direction: column;
+    margin-top: -0.1pc;
+    margin-left: -6pc;
+    font-size: 14px;
+    color: rgb(204, 101, 101);
 }
 
 .t-right form input :hover{
@@ -904,6 +922,15 @@ footer{
         align-items: center;
     }
 
+    .f-left form p{
+        display: flex;
+        flex-direction: column;
+        margin-top: -0.1pc;
+        margin-left: -6pc;
+        font-size: 14px;
+        color: rgb(204, 101, 101);
+    }
+
     .f-left form button{
         width: 80%;
         margin-left: 0.2pc;
@@ -1030,6 +1057,14 @@ footer{
         margin-left: 5pc;
         
 
+    }
+
+    .t-left form p{
+        display: flex;
+        flex-direction: column;
+        color: red;
+        font-size: 10px;
+        margin-left:4pc;
     }
 
     .t-right form button{
@@ -1285,6 +1320,14 @@ footer{
         margin-left: 5pc;
         
 
+    }
+
+    .t-left form p{
+        display: flex;
+        flex-direction: column;
+        color: red;
+        font-size: 10px;
+        margin-left:4pc;
     }
 
     .t-right form button{
