@@ -1156,6 +1156,14 @@ footer{
         margin-left: 0.2pc;
     }
     
+    .f-left form p{
+        display: flex;
+        flex-direction: column;
+        margin-top: -0.1pc;
+        margin-left: -6pc;
+        font-size: 14px;
+        color: rgb(204, 101, 101);
+    }
 
     .f-right{
         width: 100%;
